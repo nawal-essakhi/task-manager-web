@@ -1,9 +1,14 @@
-{  
-     "name": "task-manager-web",   
-     "version": "0.3.0",  
-      "description": "Task Manager Web - projet fil rouge DevOps", 
-        "private": true, 
-          "scripts": { 
-                "test": "node --test"  
-                 } 
-                } 
+{
+  "name": "task-manager-web",
+  "version": "0.3.0",
+  "description": "Task Manager Web - projet fil rouge DevOps",
+  "private": true,
+  "scripts": {
+    "test": "node --test",
+    "check:javascript": "node --check tasks.js && node --check script.js",
+    "check": "npm run check:javascript && npm test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
